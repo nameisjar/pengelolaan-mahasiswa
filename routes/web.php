@@ -34,9 +34,3 @@ route::group(['middleware' => ['guest:admin']], function () {
     route::post('/signin', [AdminController::class, 'login'])->name('signin.post');
 });
 
-// Route::middleware(['auth:admin'])->group(function () {
-//     route::get('/dashboard', [AdminController::class, 'index_dashboard'])->name('dashboard');
-// });
-// Route::middleware(['guest:admin'])->group(function () {
-//     route::get('/', [AdminController::class, 'index'])->name('signin'); 
-// });
